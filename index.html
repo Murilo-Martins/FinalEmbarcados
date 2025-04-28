@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente WebSocket</title>
+</head>
+<body>
+    <h1>Cliente WebSocket</h1>
+    <input type="text" id="inputMensagem" placeholder="Digite uma mensagem">
+    <button id="enviarBtn">Enviar</button>
+
+    <script>
+        // Substitua pelo IP do celular
+        const socket = new WebSocket('ws://192.168.0.169:8080/');
+
+        socket.onopen = function () {
+            console.log("Conexão aberta com sucesso!");
+            alert("Conectado!");
+        };
+
+        socket.onmessage = function (event) {
+            console.log("Mensagem recebida:", event.data);
+            alert("Recebido do servidor: " + event.data);
+        };
+
+        socket.onerror = function (error) {
+            console.error("Erro no WebSocket:", error);
+        };
+
+        socket.onclose = function () {
+            console.log("Conexão fechada.");
+        };
+
+        document.getElementById('enviarBtn').addEventListener('click', function () {
+            const mensagem = document.getElementById('inputMensagem').value;
+            if (socket.readyState === WebSocket.OPEN) {
+                socket.send(mensagem);
+                console.log("Mensagem enviada:", mensagem);
+            } else {
+                console.error("WebSocket não está aberto.");
+            }
+        });
+    </script>
+</body>
+</html>
