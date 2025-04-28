@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\websocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\websocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|c:\\users\\diasm\\desktop\\finalembarcados\\mauiappcontrole\\mauiappcontrole\\websocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23E49B76-B83D-4582-97A5-14340D03682A}|MauiAppControle\\MauiAppControle.csproj|solutionrelative:mauiappcontrole\\websocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\diasm\\.nuget\\packages\\communitytoolkit.maui\\11.2.0\\ReadMe.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -41,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,26 +53,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "WebSocketServer.cs",
               "DocumentMoniker": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\WebSocketServer.cs",
               "RelativeDocumentMoniker": "MauiAppControle\\WebSocketServer.cs",
               "ToolTip": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\WebSocketServer.cs",
               "RelativeToolTip": "MauiAppControle\\WebSocketServer.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwD0AAABUAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T22:47:51.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiAppControle\\MainPage.xaml.cs",
               "ToolTip": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\MainPage.xaml.cs",
               "RelativeToolTip": "MauiAppControle\\MainPage.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T22:21:05.555Z",
               "EditorCaption": ""
@@ -128,13 +128,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiAppControle\\MainPage.xaml",
               "ToolTip": "C:\\Users\\diasm\\Desktop\\FinalEmbarcados\\MauiAppControle\\MauiAppControle\\MainPage.xaml",
               "RelativeToolTip": "MauiAppControle\\MainPage.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-28T22:06:41.73Z",
               "EditorCaption": ""

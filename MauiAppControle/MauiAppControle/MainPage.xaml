@@ -1,34 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    x:Class="MauiAppControle.MainPage"
-    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="MauiAppControle.MainPage">
 
-    <Grid ColumnDefinitions="*,*,*" RowDefinitions="30,*,30">
-        <!-- Label de Status da Conexão -->
-        <Label 
-            Grid.Row="0" 
+    <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,*,Auto,*,30">
+        <!-- Status da Conexão -->
+        <Label
             Grid.ColumnSpan="3"
-            Text="{Binding StatusConexao}" 
-            FontSize="Medium"
+            Text="{Binding StatusConexao}"
+            FontAttributes="Bold"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            TextColor="Green"/>
+            Margin="10" />
 
         <!-- Camera View -->
         <toolkit:CameraView 
-            Grid.Row="1" 
-            Grid.ColumnSpan="3" 
-            SelectedCamera="{Binding SelectedCamera}"/>
+            Grid.Row="1"
+            Grid.ColumnSpan="3"
+            SelectedCamera="{Binding SelectedCamera}" />
 
-        <!-- Entry para mostrar a mensagem recebida -->
-        <Entry
+        <!-- Título "Mensagens Recebidas" -->
+        <Label 
             Grid.Row="2"
             Grid.ColumnSpan="3"
-            Text="{Binding MensagemRecebida}"
-            Margin="10"
-            IsReadOnly="True"/>
-    </Grid>
+            Text="Mensagens Recebidas:"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Margin="10,5,10,0"/>
 
+        <!-- Lista de Mensagens -->
+        <CollectionView 
+            Grid.Row="3"
+            Grid.ColumnSpan="3"
+            ItemsSource="{Binding MensagensRecebidas}"
+            Margin="10"
+            >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}" Margin="5" />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>

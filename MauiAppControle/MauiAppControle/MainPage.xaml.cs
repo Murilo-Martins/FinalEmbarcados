@@ -1,6 +1,7 @@
 ﻿using Microsoft.Maui.Controls;
 using System.Threading.Tasks;
 using System;
+using System.Collections.ObjectModel; // Adicione esse namespace
 
 namespace MauiAppControle
 {
@@ -8,8 +9,10 @@ namespace MauiAppControle
     {
         private WebSocketServer _webSocketServer;
 
-        public string MensagemRecebida { get; set; }
         public string StatusConexao { get; set; } = "Desconectado"; // Começa como Desconectado
+
+        // ObservableCollection para armazenar as mensagens
+        public ObservableCollection<string> MensagensRecebidas { get; set; } = new ObservableCollection<string>();
 
         public MainPage()
         {
@@ -30,8 +33,8 @@ namespace MauiAppControle
         {
             MainThread.BeginInvokeOnMainThread(() =>
             {
-                MensagemRecebida = mensagem;
-                OnPropertyChanged(nameof(MensagemRecebida));
+                MensagensRecebidas.Add(mensagem); // Adiciona a nova mensagem à lista
+                OnPropertyChanged(nameof(MensagensRecebidas));
             });
         }
 
