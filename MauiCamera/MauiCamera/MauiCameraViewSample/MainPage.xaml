@@ -14,7 +14,7 @@
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
-            <toolkit:CameraView x:Name="MyCamera" MediaCaptured="MyCamera_MediaCaptured" />
+            <toolkit:CameraView x:Name="MyCamera" MediaCaptured="GravarCamera" />
             <Button Text="Start" Clicked="GravarCamera" />
             
         </VerticalStackLayout>
