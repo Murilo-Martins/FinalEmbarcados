@@ -15,7 +15,7 @@
                 Aspect="AspectFit" />
 
             <toolkit:CameraView x:Name="MyCamera" MediaCaptured="MyCamera_MediaCaptured" />
-            <Button Text="Start" Clicked="GravarCamera" />
+            <Button Text="Start" Clicked="OnStartContinuousCaptureClicked" />
             
         </VerticalStackLayout>
     </ScrollView>
