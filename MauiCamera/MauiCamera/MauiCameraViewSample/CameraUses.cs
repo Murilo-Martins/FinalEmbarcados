@@ -15,6 +15,8 @@ namespace MauiCameraViewSample
         private readonly ICameraProvider cameraProvider;
         private readonly CameraView MyCamera;
         private readonly Image MyImage;
+        private readonly WebSocketServer _webSocketServer;
+        private readonly Image _imageControl;
 
         public CameraUses(ICameraProvider cameraProvider, CameraView cameraView, Image image)
         {
@@ -53,6 +55,14 @@ namespace MauiCameraViewSample
             {
                 MyImage.Source = ImageSource.FromStream(() => e.Media);
             });
+
+            // Envia a imagem pelo WebSocket
+            using var memoryStream = new MemoryStream();
+            await e.Media.CopyToAsync(memoryStream);
+            var imageBytes = memoryStream.ToArray();
+
+            await _webSocketServer.SendImageToAllClients(imageBytes);
+
         }
 
         public async Task CaptureImageAsync(CancellationToken cancellationToken)
