@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Camera;
+using CommunityToolkit.Maui.Views;
 
 namespace MauiAppControle
 {

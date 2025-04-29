@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1>Cliente WebSocket</h1>
-    <input type="text" id="inputMensagem" placeholder="Digite uma mensagem">
-    <button id="enviarBtn">Enviar</button>
+    <h2>Imagem Recebida</h2>
+    <img id="imagemRecebida" src="" alt="Imagem recebida" style="max-width: 300px; display: none;" />
 
     <script>
         // Substitua pelo IP do celular
@@ -19,8 +19,20 @@
         };
 
         socket.onmessage = function (event) {
-            console.log("Mensagem recebida:", event.data);
-            alert("Recebido do servidor: " + event.data);
+            // Verifica se a mensagem recebida é uma imagem (Blob)
+            if (event.data instanceof Blob) {
+                console.log("Imagem recebida do servidor.");
+                const reader = new FileReader();
+                reader.onload = function() {
+                    const imageElement = document.getElementById('imagemRecebida');
+                    imageElement.src = reader.result; // Define a imagem recebida como fonte da tag <img>
+                    imageElement.style.display = 'block'; // Exibe a imagem
+                };
+                reader.readAsDataURL(event.data); // Converte os bytes recebidos em uma URL de imagem
+            } else {
+                console.log("Mensagem de texto recebida:", event.data);
+                alert("Recebido do servidor: " + event.data);
+            }
         };
 
         socket.onerror = function (error) {
@@ -30,16 +42,6 @@
         socket.onclose = function () {
             console.log("Conexão fechada.");
         };
-
-        document.getElementById('enviarBtn').addEventListener('click', function () {
-            const mensagem = document.getElementById('inputMensagem').value;
-            if (socket.readyState === WebSocket.OPEN) {
-                socket.send(mensagem);
-                console.log("Mensagem enviada:", mensagem);
-            } else {
-                console.error("WebSocket não está aberto.");
-            }
-        });
     </script>
 </body>
 </html>
