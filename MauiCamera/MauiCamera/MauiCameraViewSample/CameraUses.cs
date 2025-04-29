@@ -41,7 +41,7 @@ namespace MauiCameraViewSample
             MyCamera.Handler?.DisconnectHandler();
         }
 
-        private void MyCamera_MediaCaptured(object? sender, MediaCapturedEventArgs e)
+        private async void MyCamera_MediaCaptured(object? sender, MediaCapturedEventArgs e)
         {
             // Acessando o Dispatcher via MainThread
             if (MainThread.IsMainThread)
